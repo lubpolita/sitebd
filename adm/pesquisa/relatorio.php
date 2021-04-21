@@ -28,7 +28,7 @@ require_once("../conexao.php"); //criando conexão
             </div>
         </nav>
 
-
+ <!--//////////////////////////////////////////////////////////////-->
     <!--Search Table -->
     <?php
     $cpf = $_POST['cpf'];    
