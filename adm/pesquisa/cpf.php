@@ -50,6 +50,7 @@ require_once("../conexao.php"); //criando conexão
     $searchResultFunc = mysqli_query($conn, $searchFunc);
     $searchResultAlunos = mysqli_query($conn, $searchAlunos);           //resultados da pesq    
     
+    //listando linhas
     while($row = mysqli_fetch_assoc($searchResultAlunos)){
 
             ?>
