@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt">
+    
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>FitPower</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- Third party plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">FitPower</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../../alterar.html">Alterar</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../../cadastro.html">Cadastro</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../../pesquisa.html">Pesquisa</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../../listar.html">Listar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Masthead-->
+        <header class="cadastro">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-10 align-self-end">
+                        <h1 class="text-uppercase text-white font-weight-bold">Inscrever </h1>
+                        <hr class="divider my-4" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 font-weight-light mb-5">Para inscrever um novo aluno em alguma turma siga as instruções e preencha todos os campos abaixo.</p>
+                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#start">Entendido</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--Formulário-->
+        
+        <section class="page-section bg-primary" id="start">
+            <div class="container">
+                <h2 class="text-uppercase text-white font-weight-bold text-center">Inscrever Aluno</h2>
+
+                <form action = 'inscrever.php' method='POST'>
+    
+                    <div class="form-group row">
+                        <label for="inlineFormInputName" class="col-sm-2 col-form-label">CPF do Aluno</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" onkeypress="$(this).mask('000.000.000-00');" placeholder="Ex: 000.000.000-00" name="cpfAluno">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputAddress" class="col-sm-2 col-form-label">ID da Turma</label>
+                      <div class="col-sm-10">
+                        <input type="number" class="form-control" id="inputAddress" placeholder="Ex: 1, 2, ..., n" name="idTurma">
+                      </div>
+                    </div>
+                      </div>
+                    </fieldset>
+                    </div>
+                    <div class="form-group row">
+                      <div class="col-sm-10 text-center ">
+                        <button type="submit" class="btn btn-light btn-xl">Cadastrar</button>
+                      </div>
+                    </div>
+                  </form>
+            </div>
+        </section>
+       
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="mt-0">Contato</h2>
+                        <hr class="divider my-4" />
+                        <p class="text-muted mb-5">Informações de contato da FitPower</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+                        <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+                        <div>+1 (555) 123-4567</div>
+                    </div>
+                    <div class="col-lg-4 mr-auto text-center">
+                        <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                        <!-- Make sure to change the email address in BOTH the anchor text and the link target below!-->
+                        <a class="d-block" href="mailto:contact@yourwebsite.com">fitpower@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="bg-light py-5">
+            <div class="container"><div class="small text-center text-muted">Copyright © 2020 - FitPower</div></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    </body>
+</html>
